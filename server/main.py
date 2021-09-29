@@ -11,6 +11,7 @@ if version_info < (3, 6):
     sys.exit("\033[91mError: MLSC requires Python 3.6 or greater.")
 
 from libs.audio_process_service import AudioProcessService
+from libs.music_process_service import MusicProcessService
 from libs.notification_service import NotificationService
 from libs.webserver.webserver import Webserver
 from libs.device_manager import DeviceManager
@@ -152,6 +153,19 @@ class Main():
                 self._py_audio
             ))
         self._audio_process.start()
+
+        # Start music process
+        # self._music = MusicProcessService()
+        # self._music_process = Process(
+        #     target=self._music.start,
+        #     args=(
+        #         self._config_lock,
+        #         self._notification_queue_audio_in,
+        #         self._notification_queue_audio_out,
+        #         self._audio_queue,
+        #         self._py_audio
+        #     ))
+        # self._music_process.start()
 
         self.logger.info("Initialization finished.")
 

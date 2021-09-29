@@ -27,6 +27,13 @@ from libs.effects.effect_wave import EffectWave  # pylint: disable=E0611, E0401
 from libs.effects.effect_off import EffectOff  # pylint: disable=E0611, E0401
 from libs.effects_enum import EffectsEnum  # pylint: disable=E0611, E0401
 from libs.fps_limiter import FPSLimiter  # pylint: disable=E0611, E0401
+from libs.effects.cube_effect_a import CubeEffectA
+from libs.effects.cube_effect_b import CubeEffectB
+from libs.effects.cube_effect_c import CubeEffectC
+from libs.effects.cube_effect_d import CubeEffectD
+from libs.effects.cube_effect_e import CubeEffectE
+
+
 
 from time import time
 import logging
@@ -78,7 +85,12 @@ class EffectService():
             EffectsEnum.effect_direction_changer: EffectDirectionChanger,
             EffectsEnum.effect_beat_twinkle: EffectBeatTwinkle,
             EffectsEnum.effect_segment_color: EffectSegmentColor,
-            EffectsEnum.effect_fireplace: EffectFireplace
+            EffectsEnum.effect_fireplace: EffectFireplace,
+            EffectsEnum.cube_effect_a: CubeEffectA,
+            EffectsEnum.cube_effect_b: CubeEffectB,
+            EffectsEnum.cube_effect_c: CubeEffectC,
+            EffectsEnum.cube_effect_d: CubeEffectD,
+            EffectsEnum.cube_effect_e: CubeEffectE,
         }
 
         self._initialized_effects = {}

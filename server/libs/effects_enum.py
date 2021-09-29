@@ -29,3 +29,8 @@ class EffectsEnum(Enum):
     effect_beat_twinkle = 25
     effect_segment_color = 26
     effect_fireplace = 27
+    cube_effect_a = 28
+    cube_effect_b = 29
+    cube_effect_c = 30
+    cube_effect_d = 31
+    cube_effect_e = 32
